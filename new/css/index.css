@@ -20,15 +20,18 @@ body {
   width:880px;
   height:520px;
   border-radius: 5px;
-  background-image: url(/Users/MaxKnight/Desktop/new/images/groupbg.jpg);
+  background-image: url(../images/groupbg.jpg);
   background-size: 880px 520px;
+  box-shadow:3px 2px 15px 1px #408cff;
 }
 
 /* title position */
 .title{
   padding: 72px 0 0;
   text-align: center;
-  color: #4f96f3;
+  font-family: PingFang-SC-Bold;
+  letter-spacing: 0px;
+  color: #215fa5;
 }
 .title img{
   height: 58px;
@@ -37,7 +40,7 @@ body {
 /* buttom category */
 .cate{
   margin: 0 auto;
-  padding: 56px 0 54px;
+  padding: 12px 0 86px;
   text-align: center;
   width: 260px;
 }
@@ -47,22 +50,37 @@ body {
   font-size: 22px;
   background-color: unset;
   border-style: unset;
-  border-bottom: 1px solid blue;
+  border-bottom: 3px solid blue;
 }
 .law2{
   float: right;
   font-size: 22px;
   background-color: unset;
   border-style: unset;
-  border-bottom: 1px solid blue;
 }
 
 /* input squares */
+.sign_in{
+  margin: auto;
+  height: 200px;
+}
 form{
   display: block;
   margin: 0 auto;
 }
 input{
+  border-style: unset;
+  background-color:#f6f6f6;
+  position: absolute;
+  font-size: 14px;
+  top: 18px;
+}
+.input ,.username,.password{
+  left: 40px;
+}
+/* inputs */
+.inp_f{
+  position: relative;
   width: 320px;
   height: 50px;
   display: block;
@@ -70,14 +88,58 @@ input{
   background-color:#f6f6f6;
   border-style: unset;
   border-radius: 5px;
-  font-size: 14px;
   font-family: MicrosoftYaHei,serif;
 }
+.unimg{
+  background-image: url(../images/username.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100% 100%;
+  width: 19px;
+  height: 15px;
+  top: 20px;
+  left: 15px;
+}
+.pwimg{
+  background-image: url(../images/password.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100% 100%;
+  width: 19px;
+  height: 21px;
+  top: 16px;
+  left: 15px;
+}
+
+/* submit */
 .submit{
+  position: relative;
+  width: 320px;
+  height: 50px;
+  display: block;
   margin-top: 16px;
   box-shadow:3px 2px 15px 1px #8293ac;
-  background-image: url(/Users/MaxKnight/Desktop/new/images/submit.jpg);
   font-size: 20px;
   color: white;
   font-family: PingFang-SC-Bold,serif;
+  margin: auto;
+}
+
+/* sign2 change */
+#sign2 .inp_f{
+  background-color:#fae06f;
+}
+#sign2{
+  display: none;
+}
+#sign2 input{
+  background-color:#fae06f;
+} 
+
+/* submit bg */
+#sign1 .submit{
+  background-image: url(/Users/MaxKnight/Desktop/new/images/submit.jpg);
+}
+#sign2 .submit{
+  background-image: url(/Users/MaxKnight/Desktop/new/images/submit2.jpg);
 }
