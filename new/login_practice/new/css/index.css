@@ -1,0 +1,83 @@
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+ 
+/**
+ * Remove the margin in all browsers.
+ */
+ 
+body {
+  margin: 0;
+}
+
+/* background position */
+.group{
+  z-index: -999;
+  margin: 88px auto auto;
+  background-color: cornsilk;
+  width:880px;
+  height:520px;
+  border-radius: 5px;
+  background-image: url(/Users/MaxKnight/Desktop/new/images/groupbg.jpg);
+  background-size: 880px 520px;
+}
+
+/* title position */
+.title{
+  padding: 72px 0 0;
+  text-align: center;
+  color: #4f96f3;
+}
+.title img{
+  height: 58px;
+  width: 58px;
+}
+/* buttom category */
+.cate{
+  margin: 0 auto;
+  padding: 56px 0 54px;
+  text-align: center;
+  width: 260px;
+}
+/* buttoms */
+.law1{
+  float: left;
+  font-size: 22px;
+  background-color: unset;
+  border-style: unset;
+  border-bottom: 1px solid blue;
+}
+.law2{
+  float: right;
+  font-size: 22px;
+  background-color: unset;
+  border-style: unset;
+  border-bottom: 1px solid blue;
+}
+
+/* input squares */
+form{
+  display: block;
+  margin: 0 auto;
+}
+input{
+  width: 320px;
+  height: 50px;
+  display: block;
+  margin: 0 auto 0.5px;
+  background-color:#f6f6f6;
+  border-style: unset;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: MicrosoftYaHei,serif;
+}
+.submit{
+  margin-top: 16px;
+  box-shadow:3px 2px 15px 1px #8293ac;
+  background-image: url(/Users/MaxKnight/Desktop/new/images/submit.jpg);
+  font-size: 20px;
+  color: white;
+  font-family: PingFang-SC-Bold,serif;
+}
