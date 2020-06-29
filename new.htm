@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>中国法学会诉讼服务志愿专家中心平台</title>
+  <link rel="stylesheet" type="text/css" href="./css/index.css" />
+</head>
+
+<body background="./images/background.jpg">
+  <div class="group">
+    <h1 class="title"><img src="./images/logo.png" alt="logo" align="center">
+      中国法学会诉讼服务志愿专家中心平台</h1>
+
+    <!-- category buttons -->
+    <div class="cate">
+      <button class="law1" onclick="{{law1}}">法学会</button>
+      <button class="law2" onclick="{{law2}}">最高法</button>
+    </div>
+
+    <!-- sign_in group 1 -->
+    <div class="sign_in" id="sign1">
+      <form action="" name="form1" id="form1">
+        <div class="inp_f">
+          <input type="text" class="username" name="username1" placeholder="请输入账号" value="">
+          <div class="unimg"></div>
+        </div>
+        <div class="inp_f">
+          <input type="password" class="password" name="password1" placeholder="请输入密码" value="">
+          <div class="pwimg"></div>
+        </div>
+        <input type="button" class="submit" value="登陆" onclick="log_in()">
+      </form>
+    </div>
+
+    <!-- sign group 2 -->
+    <div class="sign_in" id="sign2">
+      <form action="" name="form2">
+        <div class="inp_f">
+          <input type="text" class="username" name="username2" placeholder="请输入账号">
+          <div class="unimg"></div>
+        </div>
+        <div class="inp_f">
+          <input type="password" class="password" name="password2" placeholder="请输入密码">
+          <div class="pwimg"></div>
+        </div>
+        <input type="button" class="submit" value="登陆" onclick="log_in()">
+      </form>
+    </div>
+  </div>
+
+  <!-- pop-up window -->
+  <div class="cover" id='cover' style="display: none;">
+    <div class="window">
+      <div id="header">
+        <input id="header-right" onclick="hidder()" type="button" value="X">
+      </div>
+      <div id="error">testing</div>
+    </div>
+  </div>
+  </div>
+</body>
+<script src="./js/index.js"></script>
+
+</html>
