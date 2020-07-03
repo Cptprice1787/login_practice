@@ -1,0 +1,214 @@
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+ 
+/**
+ * Remove the margin in all browsers.
+ */
+ 
+body {
+  margin: 0;
+  background-color: #e3e4ea;
+}
+.tap
+{
+  
+}
+.total{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 10% auto;
+  background-color: #e3e4ea;
+}
+._1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  border-radius: 250px;
+  background-color: aqua;
+  margin: auto;
+  animation:expand 2s;
+  -moz-animation:expand 2s;
+  -webkit-animation:expand 2s;
+  -o-animation:expand 2s;
+  animation-iteration-count:3;
+  -webkit-animation-iteration-count:3;
+}
+._2{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 200px;
+  background-color: silver;
+  margin: auto;
+  animation:expand2 2s;
+  -moz-animation:expand2 2s;
+  -webkit-animation:expand2 2s;
+  -o-animation:expand2 2s;
+  animation-iteration-count:3;
+  -webkit-animation-iteration-count:3;
+}
+._3{
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 250px;
+  background-color: slateblue;
+  margin: auto;
+  animation:expand3 2s;
+  -moz-animation:expand3 2s;
+  -webkit-animation:expand3 2s;
+  -o-animation:expand3 2s;
+  animation-iteration-count:3;
+  -webkit-animation-iteration-count:3;
+}
+.text{
+  position: absolute;
+  font-size: 12px;
+  text-align: center;
+  line-height: 500px;
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 100%;
+  /* animation:enlarge 3s linear;
+  -moz-animation:enlarge 3s linear;
+  -webkit-animation:enlarge 3s linear;
+  -o-animation:enlarge 3s linear;
+  -webkit-animation: spin 1s linear 1s 5 alternate;
+  animation: spin 1s linear infinite; */
+
+  animation-name:enlarge, spin;
+  animation-duration:2s, 2s;
+  animation-timing-function:linear, linear;
+  animation-delay:0, 2s;
+  animation-iteration-count:1, 4;
+  animation-fill-mode:forwards, forwards;
+  animation-direction:normal, alternate;
+
+  -webkit-animation-name:enlarge, spin;
+  -webkit-animation-duration:2s, 2s;
+  -webkit-animation-timing-function:linear, linear;
+  -webkit-animation-delay:0, 2s;
+  -webkit-animation-iteration-count:1, 4;
+  -webkit-animation-fill-mode:forwards, forwards;
+  -webkit-animation-direction:normal, alternate;
+}
+
+@keyframes expand
+{
+0% {height: 300px;width: 300px;}
+100% {height: 400px;width: 400px;}
+}
+@-webkit-keyframes expand/* Safari 和 Chrome */
+{
+0% {height: 300px;width: 300px;}
+100% {height: 400px;width: 400px;}
+}
+@-o-keyframes expand
+{
+0% {height: 300px;width: 300px;}
+100% {height: 400px;width: 400px;}
+}
+@-moz-keyframes expand
+{
+0% {height: 300px;width: 300px;}
+100% {height: 400px;width: 400px;}
+}
+
+
+@keyframes expand2
+{
+0% {height: 200px;width: 200px;}
+100% {height: 300px;width: 300px;}
+}
+@-webkit-keyframes expand2/* Safari 和 Chrome */
+{
+0% {height: 200px;width: 200px;}
+100% {height: 300px;width: 300px;}
+}
+@-o-keyframes expand2
+{
+0% {height: 200px;width: 200px;}
+100% {height: 300px;width: 300px;}
+}
+@-moz-keyframes expand2
+{
+0% {height: 200px;width: 200px;}
+100% {height: 300px;width: 300px;}
+}
+
+
+@keyframes expand3
+{
+0% {height: 100px;width: 100px;}
+100% {height: 200px;width: 200px;}
+}
+@-webkit-keyframes expand3/* Safari 和 Chrome */
+{
+0% {height: 100px;width: 100px;}
+100% {height: 200px;width: 200px;}
+}
+@-o-keyframes expand3
+{
+0% {height: 100px;width: 100px;}
+100% {height: 200px;width: 200px;}
+}
+@-moz-keyframes expand3
+{
+0% {height: 100px;width: 100px;}
+100% {height: 200px;width: 200px;}
+}
+
+@keyframes enlarge
+{
+0% {font-size: 12px;}
+100%{font-size: 35px;}
+}
+@-webkit-keyframes enlarge/* Safari 和 Chrome */
+{
+  0% {font-size: 12px;}
+  100%{font-size: 35px;}
+}
+@-o-keyframes enlarge
+{
+  0% {font-size: 12px;}
+  100%{font-size: 35px;}
+}
+@-moz-keyframes enlarge
+{
+  0% {font-size: 12px;}
+  100%{font-size: 35px;}
+}
+
+@-webkit-keyframes spin {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
