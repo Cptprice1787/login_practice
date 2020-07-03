@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>案件系统</title>
+  <link rel="stylesheet" type="text/css" href="./css/index.css" />
+  <link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_1913564_w55o0si7eun.css" />
+</head>
+
+<body>
+  <!-- 标题以及个人信息 -->
+  <div class="head">
+    <h1 class="title"><img src="../chart/images/logo.png" alt="emblem">XXXXXXXXXXXXX系统</h1>
+    <div class="head_right">
+      <div class="personal_1">
+        <i class="iconfont icon--_fangzi hr_icon"></i>成都市公安局
+      </div>
+      <div class="personal_2">
+        <i class="iconfont icon-building_ hr_icon"></i>法制室
+      </div>
+      <div class="gap"></div>
+      <div class="p_info">
+        <img id="person" src="../chart/images/person.jpg" alt="person">
+        <i class="iconfont icon-touxiang p_icon" style="display: none;"></i>
+        <div class="P">陈长官</div>
+      </div>
+    </div>
+  </div>
+  <!-- 表格整体内容 -->
+  <div class="chart">
+    <!-- 头部链接 -->
+    <div class="c_head">
+      <div class="c_float">
+        <div class="list">
+          <i class="iconfont icon-sousuo head_icon">案件列表</i>
+        </div>
+        <div class="know">
+          <i class="iconfont icon-wenjian head_icon">知识索引</i>
+        </div>
+      </div>
+    </div>
+    <!-- 统计图片 -->
+    <div class="total_img">
+      <img src="../chart/images/img1.png" alt="">
+      <img src="../chart/images/img2.png" alt="">
+      <img src="../chart/images/img3.png" alt="">
+    </div>
+    <!-- 表格 -->
+    <div class="r_chart">
+      <!-- 案件搜索索引及案件同步按钮 -->
+      <div class="search">
+        <div class="s_in">
+          <div class="input_total">
+            <i class="iconfont icon-sousuo1 in_icon"></i>
+            <input type="text" id="s_input" placeholder="请输入案件名称/编号/嫌疑人姓名">
+          </div>
+          <button class="s_apply" onclick="">搜索</button>
+        </div>
+        <button class="synchronize" onclick="location='../circling/index.htm'">同步案件</button>
+      </div>
+      <!-- 表格本体 -->
+      <table class="table" cellspacing="0">
+        <tr class="head_row">
+          <td class="first_line">序号</td>
+          <td>案件名称</td>
+          <td>嫌疑人</td>
+          <td>案由</td>
+          <td>当前状态</td>
+          <td>更新时间</td>
+          <td>立案时间</td>
+        </tr>
+        <tr class="odd_row">
+          <td>1</td>
+          <td>张潇故意伤人案</td>
+          <td>张潇、李于刚、王嘉尔</td>
+          <td>故意伤人</td>
+          <td>已报捕</td>
+          <td class="time">今天 12:45</td>
+          <td class="time">2019-6-11 12:01</td>
+        </tr>
+        <tr class="even_row">
+          <td>2</td>
+          <td>李于刚盗窃案</td>
+          <td>李于刚</td>
+          <td>盗窃</td>
+          <td>检察院处理中</td>
+          <td class="time">昨天 18:23</td>
+          <td class="time">2019-6-11 12:01</td>
+        </tr>
+        <tr class="odd_row">
+          <td>3</td>
+          <td>张潇故意伤人案</td>
+          <td>张潇</td>
+          <td>故意伤人</td>
+          <td>已移诉</td>
+          <td class="time">2019-6-11 12:01</td>
+          <td class="time">2019-6-11 12:01</td>
+        </tr>
+        <tr class="even_row">
+          <td>4</td>
+          <td>张潇故意伤人案</td>
+          <td>李于刚</td>
+          <td>盗窃</td>
+          <td>检察院处理中</td>
+          <td class="time">2019-6-11 12:01</td>
+          <td class="time">2019-6-11 12:01</td>
+        </tr>
+        <tr class="odd_row">
+          <td>5</td>
+          <td>张潇故意伤人案</td>
+          <td>张潇</td>
+          <td>故意伤人</td>
+          <td>已报捕</td>
+          <td class="time">2019-6-11 12:01</td>
+          <td class="time">2019-6-11 12:01</td>
+        </tr>
+        <tr class="even_row">
+          <td>6</td>
+          <td>张潇故意伤人案</td>
+          <td>李于刚</td>
+          <td>盗窃</td>
+          <td>检察院处理中</td>
+          <td class="time">2019-6-11 12:01</td>
+          <td class="time">2019-6-11 12:01</td>
+        </tr>
+        <tr class="odd_row">
+          <td>7</td>
+          <td>张潇故意伤人案</td>
+          <td>张潇</td>
+          <td>故意伤人</td>
+          <td>已移诉</td>
+          <td class="time">2019-6-11 12:01</td>
+          <td class="time">2019-6-11 12:01</td>
+        </tr>
+        <tr class="even_row">
+          <td>8</td>
+          <td>张潇故意伤人案</td>
+          <td>李于刚</td>
+          <td>盗窃</td>
+          <td>检察院处理中</td>
+          <td class="time">2019-6-11 12:01</td>
+          <td class="time">2019-6-11 12:01</td>
+        </tr>
+        <tr class="odd_row">
+          <td>9</td>
+          <td>张潇故意伤人案</td>
+          <td>张潇</td>
+          <td>故意伤人</td>
+          <td>已移诉</td>
+          <td class="time">2019-6-11 12:01</td>
+          <td class="time">2019-6-11 12:01</td>
+        </tr>
+        <tr class="even_row">
+          <td>10</td>
+          <td>张潇故意伤人案</td>
+          <td>李于刚</td>
+          <td>盗窃</td>
+          <td>检察院处理中</td>
+          <td class="time">2019-6-11 12:01</td>
+          <td class="time">2019-6-11 12:01</td>
+        </tr>
+      </table>
+    </div>
+    <!-- 导航数字 -->
+    <div class="navigator">
+      <div class="navis">
+        <input class="navi" type="button" name="0" id="_0" value="<">
+        <input class="navi" type="button" name="1" id="_1" value="1">
+        <input class="navi" type="button" name="2" id="_2" value="2">
+        <input class="navi" type="button" name="3" id="_3" value="3">
+        <input class="navi" type="button" name="4" id="_4" value="4">
+        <input class="navi" type="button" name="5" id="_5" value="5">
+        <input class="navi" type="button" name="6" id="_6" value="6">
+        <input class="navi" type="button" name="7" id="_7" value=">">
+      </div>
+      <div class="skip">
+        前往 <input type="text" id="n_input"> 页
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./js/index.js"></script>
+
+</html>
